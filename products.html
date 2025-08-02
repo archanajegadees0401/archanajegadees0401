@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ARCH SHOP –products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      position: relative;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h2 {
+      margin: 10px 0 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .discount {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #e91e63;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ARCH SHOP –  Product Categories</h1>
+
+  <div class="grid">
+    <div class="card">
+      <span class="discount">10% OFF</span>
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQn776C1ktWI2NzumemygbGSYm24iTQBxY90glVbLjkczaYXLSC7ratr-a0wOG9tamep_U_Tlp6AursTMEpPtavKNLu_JZFOnmvfHlo0ug" alt="Clothing">
+      <a href="https://www.myntra.com/kurtas/prisca/prisca-paisley-printed-notch-neck-panelled-a-line-kurta/34025019/buy">view details></a>
+      <div class="card-content"><h2>Clothing</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">15% OFF</span>
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSECTsJDFRuqohlglIFcOPGyv6qwnMz5YaHMAuedOw85yVejs4GdBfLuzilyz_TSSYy8cQ9GLr2pSYLUy_SoRdkvD1Q_5QY52aOiagieExu2KIQsO3HP3HZ" alt="Footwear">
+      <a href="https://www.myntra.com/casual-shoes/asian/asian-men-colourblocked-round-toe-mid-top-sneakers/30396659/buy?storeContext=fwd&gPromoCode=MyntraKotakCCJun2025">view details</a>
+      <div class="card-content"><h2>Footwear</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">20% OFF</span>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMnXU2Ae_g3pjhJpZ-A4DMSOdSpfuAdh9PiQ&s" alt="Electronics">
+      <a href="https://www.istockphoto.com/photos/electronic-items">view details</a>
+      <div class="card-content"><h2>Electronics</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">25% OFF</span>
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT15-wroDi3v4Rgnqv3RW6VZccZaxJKfXWKn6LFbHWsEHupyOk-Q5sKyfkwNzxv8JXh66oV3duSMrPPz9c3SGfP1iZCEFbXPFu4UFzzzvhpDVAb4uQFqF8">
+      <a href="https://www.apple.com/in/shop/buy-iphone/iphone-16-pro/6.9%22-display-1tb-black-titanium?cid=aos-in-seo-pla-iphone-iphone">view details</a>
+      <div class="card-content"><h2>Mobile Phones</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">30% OFF</span>
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR0UsVOVlQle1uOe5cKZH30AItEHNSBPleKEqK6MMT9FuyTI-YEb11pMwjdrWCV_--WqlwhBotvSbw1IWYzLYN6spLhEYA3yovuKJVW8ZKBGoc9OvDP_q37GQ" alt="Laptops">
+      <a href="https://www.poorvika.com/asus-tuf-gaming-a15-amd-ryzen-7-7435hs-windows-11-home-laptop-fa566ncr-hn254ws-graphite-black-16gb-512gb/p?gStoreCode=AMAY">view details></a>
+      <div class="card-content"><h2>Laptops</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">18% OFF</span>
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR6q1CVrqn-BTJ8RnqkBPjUHcSAuMYa5VoLpcxlz8DmSisx8C2iLDPFvymnX7yuDM1_XiXXWP9k_wXOMwEKT9gUUUHv8RxuVn_CLfMFsjC7" alt="kitchen">
+      <a href="https://nestasia.in/products/kitchen-storage-rack-with-set-of-9-spice-jars-and-oil-dispensers?currency=INR&variant=41800530919533&stkn=28e37e0435b9&srsltid=AfmBOoqL23uxRaVFYa69jx8ax0ENBG_kKMph-BXz1YSVRpGzjks7ygajq2U&gPromoCode=MAKEHOMESPECIAL5OFF">view details</a>
+      <div class="card-content"><h2>Kitchen</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">22% OFF</span>
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTLC4dIFlR0d06rPRqNVcAKSVcQoNI0BM2Ck7Plj1xFCWyGX5W_FjAaFvdLjb36dNelYvXO4NbGVepf205xjXVpms7cXZ4HbjPn0CM9IFqxKUl8y7UE8JoS" alt="Books">
+      <a href="https://www.amazon.in/Art-Being-Alone-Loneliness-Solitude/dp/9355434022">view details</a>
+      <div class="card-content"><h2>Books</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">35% OFF</span>
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSfSbaIZvSq1tOPk8loAzI3vOUoEKWaC1aradqM5GEqZtHdAO2H_POSWYFOq7j9VzxfxjXZcIB97gx-qy8P74FwF2yflYijmBjCJnL0bEo" alt="Furniture">
+      <a href="https://thetimberguy.com/products/contemporary-wooden-sofa-set-with-1-center-table-sun-wss177?variant=12014017413163&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOoqKNs677OPpanpKJ_7ldBvaHbOQpwT04BsVp9hZRsgEiyVARnv7xQc">view details</a>
+      <div class="card-content"><h2>Furniture</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">15% OFF</span>
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSTSkx8hRs5XWwGMUxCVyCOqZBMEg6UKwIepGRkjTXKaui4GN5VV1HaEgQPpTDKTq0iKbVxo9PhIqolgvgfTHwarykiWGVTM79XbhLkM_RKw9o0Q-C5qk4i" alt="Cosmetics">
+      <a href="http://www.flipkart.com/blue-heaven-festive-makeup-kit-women-fair-tone-combo/p/itmba22810f6fb4b?pid=MKTH6EH83WGR4EU5&lid=LSTMKTH6EH83WGR4EU5BJRZCH&marketplace=FLIPKART&cmpid=content_makeup-kit_8965229628_gmc">view details</a>
+      <div class="card-content"><h2>Cosmetics</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">10% OFF</span>
+      <img src="https://5.imimg.com/data5/SELLER/Default/2024/2/393872854/IG/LO/SQ/66596346/stan.jpg" alt="Stationery">
+      <a href="https://www.indiamart.com/proddetail/all-office-stationery-items-2853509644255.html?srsltid=AfmBOoqbC2iiCW19Bzgw3T7j4vJyWx5j2eYaRe1Y2bUz4gKCWr_F_EeH">view details</a>
+      <div class="card-content"><h2>Stationery</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">50% OFF</span>
+      <img src="https://fantasticcleaners.com.au/blog/wp-content/uploads/2024/09/How-to-Clean-and-Disinfect-Childrens-Toys.jpg" alt="Toys">
+      <a href="https://fantasticcleaners.com.au/blog/how-to-clean-and-disinfect-childrens-toys/>">view details</a>
+      <div class="card-content"><h2>Toys</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">60% OFF</span>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO4p3ocUvx-BM03yMFbpKQPR5FsGzgVS3KIQ&s" alt="Home Decor">
+       <a href="https://www.amazon.in/Special-Aesthetic-Backdrop-Bedroom-Artificial/dp/B0BSRYDK16">view details</a>
+      <div class="card-content"><h2>Home Decor</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">33% OFF</span>
+      <img src="https://img.tatacliq.com/images/i8/1316Wx1468H/MP000000014437872_1316Wx1468H_202209131821231.jpeg" alt="watches">
+       <a href="https://luxury.tatacliq.com/fossil-ftw6077-gen-6-smart-watch-for-women/p-mp000000014437872">view details</a>
+      <div class="card-content"><h2>watches</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">45% OFF</span>
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTGlEW9h8YPNuQOjw9FgMrD78XZzc0ZcHV5poOwP6P7jFqI6rABxs7XNvznk1-dPA0eFa4evbK3X-rOjZgaV1H0lGyePPVOZbH51G-F160&usqp=CAc"=" alt="Jewelry">
+       <a href="https://www.myntra.com/Earrings/Shining+Diva/Shining-Diva-White-Contemporary-Jhumkas-Earrings/17386164/buy?storeContext=fwd&gPromoCode=MyntraKotakCCJun2025">view details</a>
+      <div class="card-content"><h2>Jewelry</h2></div>
+    </div>
+
+    <div class="card">
+      <span class="discount">32% OFF</span>
+      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRtbq0Tvm014JaxW4PyTJS0NxnbVitndwfhvSUL194LN0461-P5hsbUTzjD9lSM29BMAtR247IMuazBcInDudVHhwNLP66IEotBJPFJ5A4nwg_06OBu9-cJ"Organic Food">
+       <a href="https://organictattva.com/products/organic-starter-pack-wheat-flour-mustard-oil-basmati-rice-arhar-dal-moong-dal-kabuli-chana-brown-sugar-rock-salt?variant=45490084806823&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOor67W7Tfs9VsW0_uXtKGucDGgxlQYnXyfc3abKhCUrbfenujZ9NiIk">view details</a>
+      <div class="card-content"><h2>Organic Food</h2></div>
+    </div>
+  </div>
+
+</body>
+</html>

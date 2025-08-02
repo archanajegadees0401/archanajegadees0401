@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Complete Profile - SuperShop</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #42a5f5, #7e57c2); /* blue to purple */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .profile-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 400px;
+      max-width: 95%;
+    }
+
+    .profile-container h2 {
+      text-align: center;
+      color: #5e35b1;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      margin-bottom: 15px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #42a5f5;
+      outline: none;
+    }
+
+    .btn-save {
+      background-color: #5e35b1;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    .btn-save:hover {
+      background-color: #4527a0;
+    }
+
+    .message {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <h2>Update Your Profile</h2>
+    <form id="profileForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" value="Ravi Kumar" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" value="ravi.kumar@example.com" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" value="+91 98765 43210" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" value="1995-08-01">
+
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="Male" selected>Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="address">Address</label>
+      <textarea id="address" rows="2">No.12, MG Road, Chennai - 600001</textarea>
+
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" value="600001">
+
+      <label for="country">Country</label>
+      <input type="text" id="country" value="India">
+
+      <label for="bio">Short Bio</label>
+      <textarea id="bio" rows="3">Loyal customer since 2023. Loves fashion & gadgets!</textarea>
+
+      <button type="submit" class="btn-save">Save Profile</button>
+      <div class="message" id="message">✅ Profile updated successfully!</div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("profileForm");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // simulate save
+      message.style.display = "block";
+
+      setTimeout(() => {
+        message.style.display = "none";
+      }, 2500);
+    });
+  </script>
+
+</body>
+</html>
